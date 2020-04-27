@@ -3,13 +3,16 @@ import char from '../../index.js';
 
 test('Healthy', () => {
   expect(char.health).toBeGreaterThanOrEqual(50);
-  return 'healthy';
+  // eslint-disable-next-line no-console
+  console.log('healthy');
 });
 test('Wounded', () => {
   expect(char.health).toBeGreaterThanOrEqual(15);
-  return 'wounded';
+  // eslint-disable-next-line no-console
+  console.log('wounded');
 });
 test('Critical', () => {
   expect(char.health).toBeGreaterThanOrEqual(1);
-  return 'critical';
+  // eslint-disable-next-line no-console
+  console.log('critical');
 });
