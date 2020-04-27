@@ -1,7 +1,5 @@
 import character from '../../index'
 
-
-
 test('Health point', () => {
 
 expect(char.health).toBeGreaterThan(50);
@@ -16,8 +14,4 @@ test('Wounded', () => {
 test('Critical', () => {
     expect(char.health).toBeLessThan(15).toBeGreaterThan(0);
     return critical
-})
-
-if(char.health < 0) {
-    return "Oops, you're dead!"
-}
+});
