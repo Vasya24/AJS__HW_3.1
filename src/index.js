@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
 const char = {
-    name: 'Маг',
-    health: 90
-}
+  name: 'Маг',
+  health: 90,
+};
 
-export default character
+export default char;
