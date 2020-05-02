@@ -40,11 +40,5 @@
   },
   "dependencies": {
     "core-js": "^3.6.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test"
-    }
   }
 }
