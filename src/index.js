@@ -5,7 +5,7 @@ const char = {
   color: ''
 };
 
-let hp = (function() {
+function hp() {
   if (char.health > 50) {
     return char.color = 'Green';
   } else if (char.health < 50 || char.health > 15) {
@@ -15,6 +15,6 @@ let hp = (function() {
   } else {
     alert('Oops, you are dead!')
   };
-}())
+}
 
 export { char, hp }
