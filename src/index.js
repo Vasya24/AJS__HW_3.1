@@ -2,18 +2,17 @@
 const char = {
   name: 'Маг',
   health: 90,
-  color: ''
 };
 
 function hp() {
   if (char.health > 50) {
-    return char.color = 'Green';
-  } else if (char.health < 50 || char.health > 15) {
-    return char.color = 'Yellow';
-  } else if (char.health < 15 || char.health > 0) {
-    return char.color = 'Red';
-  } else {
-    alert('Oops, you are dead!')
+    console.log('Healthy')
+  };
+  if (char.health < 50 || char.health > 15) {
+    console.log('Wounded')
+  };
+  if (char.health < 15 || char.health > 0) {
+    console.log('Critical')
   };
 }
 

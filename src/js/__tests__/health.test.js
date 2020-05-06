@@ -2,6 +2,14 @@ import { char, hp } from '../../index.js';
 
 hp()
 
-test('Health test', () => {
-  expect(char.health).toBe(90)
+test('Healthy', () => {
+  expect(hp()).toBe('Healthy')
+})
+
+test('Unhealthy', () => {
+  expect(hp()).toBe('Wounded')
+})
+
+test('Almost dead', () => {
+  expect(hp()).toBe('Critical')
 })
