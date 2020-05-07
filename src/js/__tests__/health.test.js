@@ -1,15 +1,13 @@
-import { char, hp } from '../../index.js';
-
-hp()
+import { char } from '../../index';
 
 test('Healthy', () => {
-  expect(hp()).toBe('Healthy')
+  expect(char.health).toBeGreaterThan(50)
 })
 
-test('Unhealthy', () => {
-  expect(hp()).toBe('Wounded')
+test('Wounded', () => {
+  expect(char.health).toBeLessThanOrEqual(50)
 })
 
-test('Almost dead', () => {
-  expect(hp()).toBe('Critical')
+test('Critical', () => {
+  expect(char.health).toBeLessThan(15)
 })
