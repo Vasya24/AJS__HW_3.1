@@ -1,13 +1,13 @@
-import { char } from '../../index';
+import { wizard, swordsman, bowman } from '../../index';
 
 test('Healthy', () => {
-  expect(char.health).toBeGreaterThan(50)
+  expect(wizard.health).toBeGreaterThan(50)
 })
 
 test('Wounded', () => {
-  expect(char.health).toBeLessThanOrEqual(50)
+  expect(swordsman.health).toBeLessThanOrEqual(50)
 })
 
 test('Critical', () => {
-  expect(char.health).toBeLessThan(15)
+  expect(bowman.health).toBeLessThan(15)
 })
